@@ -56,7 +56,7 @@ header {
 
 #logo {
     float: left;
-    background: url(../img/logo1.png) no-repeat;
+    background: url(img/logo1.png) no-repeat;
     width: 111px;
     height: 90px;
 }
@@ -221,7 +221,7 @@ input[type=submit] {
     right: 75px;
     width: 30px;
     height: 30px;
-    background: url(../img/search1.png) no-repeat;
+    background: url(img/search1.png) no-repeat;
     opacity: 0.5;
     transition: opacity .3s ease-in-out;
     -webkit-transition: opacity .3s ease-in-out;
@@ -247,7 +247,7 @@ td:nth-of-type(3) img {
 
 .aeroflot::before {
     content: "Аэрофлот";
-    background: url(../img/logos/aeroflot.png) 25px 20px no-repeat;
+    background: url(img/logos/aeroflot.png) 25px 20px no-repeat;
     width: 100%;
     height: 100%;
     top: 11px;
@@ -257,7 +257,7 @@ td:nth-of-type(3) img {
 
 .transaero::before {
     content: "Трансаэро";
-    background: url(../img/logos/transaero.png) 17px 25px no-repeat;
+    background: url(img/logos/transaero.png) 17px 25px no-repeat;
     width: 100%;
     height: 100%;
     top: 11px;
@@ -267,7 +267,7 @@ td:nth-of-type(3) img {
 
 .tk::before {
     content: "Turkish Airlines";
-    background: url(../img/logos/TK_Airline.png) 17px 25px no-repeat;
+    background: url(img/logos/TK_Airline.png) 17px 25px no-repeat;
     width: 100%;
     height: 100%;
     top: 11px;
@@ -277,7 +277,7 @@ td:nth-of-type(3) img {
 
 .el-al::before {
     content: "EL AL";
-    background: url(../img/logos/El_Al_Logo.png) 17px 25px no-repeat;
+    background: url(img/logos/El_Al_Logo.png) 17px 25px no-repeat;
     width: 100%;
     height: 100%;
     top: 11px;
@@ -287,7 +287,7 @@ td:nth-of-type(3) img {
 
 .s7::before {
     content: "S7 Airlines";
-    background: url(../img/logos/s7-airlines.png) 17px 20px no-repeat;
+    background: url(img/logos/s7-airlines.png) 17px 20px no-repeat;
     width: 100%;
     height: 100%;
     top: 11px;
