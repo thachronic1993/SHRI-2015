@@ -5,6 +5,63 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        //Реализация пункта
+        //количество отображаемых данных по высоте больше ширины экрана, при прокрутке заголовок таблицы приклеивается к верхней части видимой области окна браузера;
+        $(document).ready(function () {
+            var x = $('#scoreboard tr:last-child').offset().top - 75;
+            var $title = $(".title");
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > $("#scoreboard").offset().top) {
+                    $title.css('visibility', 'visible');
+                } else {
+                    $title.css('visibility', 'hidden');
+                }
+                if ($(this).scrollTop() > x) {
+                    $title.css({
+                        'top': x,
+                        'position': 'absolute'
+                    });
+                } else {
+                    $title.css({
+                        'top': '0',
+                        'position': 'fixed'
+                    });
+                }
+            });
+
+            //Реализация пункта
+            //в дополнение к предыдущему пункту сделайте так, чтобы по клику на соответствующую строчку в выплывающем окне показывались все данные рейса;
+            $("tr").click(function () {
+                $("#hint").html($(this).html());
+            });
+
+            //Реализация пункта
+            //два чекбокса над самим табло: прилёт и вылет, по нажатию показываются только соответствующие рейсы.
+            $(function () {
+                var departure = $('.departure').parent('tr');
+                var arrival = $('.arrival').parent('tr');
+                $("#type1").change(function () {
+                    if ($("#type1").prop("checked", true)) {
+                        $("#type2").prop("checked", false);
+                        departure.detach();
+                        arrival.appendTo('#scoreboard');
+                    }
+                    x = $('#scoreboard tr:last-child').offset().top - 75;
+                });
+
+                $("#type2").change(function () {
+                    if ($("#type2").prop("checked", true)) {
+                        $("#type1").prop("checked", false);
+                        arrival.detach();
+                        departure.appendTo('#scoreboard');
+                    }
+                    x = $('#scoreboard tr:last-child').offset().top - 75;
+                });
+            });
+        });
+    </script>
     <title>Задание 1</title>
 </head>
 
@@ -202,63 +259,7 @@
 
 
     </div>
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script>
-        //Реализация пункта
-        //количество отображаемых данных по высоте больше ширины экрана, при прокрутке заголовок таблицы приклеивается к верхней части видимой области окна браузера;
-        $(document).ready(function () {
-            var x = $('#scoreboard tr:last-child').offset().top - 75;
-            var $title = $(".title");
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > $("#scoreboard").offset().top) {
-                    $title.css('visibility', 'visible');
-                } else {
-                    $title.css('visibility', 'hidden');
-                }
-                if ($(this).scrollTop() > x) {
-                    $title.css({
-                        'top': x,
-                        'position': 'absolute'
-                    });
-                } else {
-                    $title.css({
-                        'top': '0',
-                        'position': 'fixed'
-                    });
-                }
-            });
 
-            //Реализация пункта
-            //в дополнение к предыдущему пункту сделайте так, чтобы по клику на соответствующую строчку в выплывающем окне показывались все данные рейса;
-            $("tr").click(function () {
-                $("#hint").html($(this).html());
-            });
-
-            //Реализация пункта
-            //два чекбокса над самим табло: прилёт и вылет, по нажатию показываются только соответствующие рейсы.
-            $(function () {
-                var departure = $('.departure').parent('tr');
-                var arrival = $('.arrival').parent('tr');
-                $("#type1").change(function () {
-                    if ($("#type1").prop("checked", true)) {
-                        $("#type2").prop("checked", false);
-                        departure.detach();
-                        arrival.appendTo('#scoreboard');
-                    }
-                    x = $('#scoreboard tr:last-child').offset().top - 75;
-                });
-
-                $("#type2").change(function () {
-                    if ($("#type2").prop("checked", true)) {
-                        $("#type1").prop("checked", false);
-                        arrival.detach();
-                        departure.appendTo('#scoreboard');
-                    }
-                    x = $('#scoreboard tr:last-child').offset().top - 75;
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>
