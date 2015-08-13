@@ -1,0 +1,74 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font: normal 20px/24px "Yanone Kaffeesatz", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    padding: 5px 0;
+    font
+}
+
+#mp3_player {
+    border: 1px solid white;
+    width: 800px;
+    height: 160px;
+    background: #131313;
+    padding: 5px;
+    margin: 50px auto;
+}
+
+#mp3_player > div > audio {
+    width: 800px;
+    background: #131313;
+    float: left;
+}
+
+#mp3_player > canvas {
+    width: 800px;
+    height: 70px;
+    background: #131313;
+    float: left;
+}
+
+.dropzone {
+    width: 800px;
+    height: 160px;
+    line-height: 160px;
+    border: 2px dashed #ccc;
+    color: #ccc;
+    text-align: center;
+    margin: 0 auto;
+    transition: border .3s, color .3s;
+}
+
+.dropzone.dragover {
+    border: 2px dashed rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input[type=range][orient=vertical] {
+    writing-mode: bt-lr;
+    -webkit-appearance: slider-vertical;
+    height: 128px;
+    width: 6%;
+}
+
+#eq {
+    width: 800px;
+    margin: 20px auto;
+}
+
+button {
+    border: none;
+    outline: none;
+    font: 20px/24px "Yanone Kaffeesatz", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #fff;
+    height: 35px;
+    width: 17%;
+    margin: 10px;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}

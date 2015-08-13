@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="main.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="player.js"></script>
+
+<head>
+
+
+</head>
+
+<body>
+    <div align='center'>
+        <div id="mp3_player">
+            <p id="songname">Song name</p>
+
+            <div id="audio_box">
+            </div>
+            <canvas id="analyser_render"></canvas>
+        </div>
+        <div id="dropzone" class="dropzone">Drop files here</div>
+        <div id="eq">
+            <input type="range" min="-12" max="12" step="1" orient="vertical" id="eq1" oninput="eq1.gain.value = this.value" name="eq1">
+            <input type="range" min="-12" max="12" step="1" orient="vertical" id="eq2" oninput="eq2.gain.value = this.value" name="eq2">
+            <input type="range" min="-12" max="12" step="1" orient="vertical" id="eq3" oninput="eq3.gain.value = this.value" name="eq3">
+            <input type="range" min="-12" max="12" step="1" orient="vertical" id="eq4" oninput="eq4.gain.value = this.value" name="eq4">
+            <input type="range" min="-12" max="12" step="1" orient="vertical" id="eq5" oninput="eq5.gain.value = this.value" name="eq5">
+            <input type="range" min="-12" max="12" step="1" orient="vertical" id="eq6" oninput="eq6.gain.value = this.value" name="eq6">
+            <input type="range" min="-12" max="12" step="1" orient="vertical" id="eq7" oninput="eq7.gain.value = this.value" name="eq7">
+            <input type="range" min="-12" max="12" step="1" orient="vertical" id="eq8" oninput="eq8.gain.value = this.value" name="eq8">
+            <input type="range" min="-12" max="12" step="1" orient="vertical" id="eq9" oninput="eq9.gain.value = this.value" name="eq9">
+            <input type="range" min="-12" max="12" step="1" orient="vertical" id="eq10" oninput="eq10.gain.value = this.value" name="eq10">
+            <br>
+            <button onclick="normal()">normal</button>
+            <button onclick="pop()">pop</button>
+            <button onclick="rock()">rock</button>
+            <button onclick="jazz()">jazz</button>
+            <button onclick="classic()">classic</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
