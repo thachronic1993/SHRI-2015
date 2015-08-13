@@ -7,6 +7,7 @@ body {
     background: #ffffff;
     font-family: 'PT Sans', sans-serif;
     color: #545454;
+    -webkit-font-smoothing: antialiased;
 }
 
 a {
