@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <title>Задание 1</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="logo"></div>
+            <div id="contacts">
+                <a id="tel" href="tel: +74951234567">+7&nbsp;(495)&nbsp;123-45-67</a>
+                <p id="adress">Москва, Международное шоссе 28 Б</p>
+                <a id="email" href="mailt:airport@email.com">airport@email.com</a>
+            </div>
+            <a id="login" href="#">Вход в личный кабинет</a>
+        </header>
+        <div id="nav">
+            <ul>
+                <li><a href="#">Главная</a>
+                </li>
+                <li><a class='active' href="#">Табло</a>
+                </li>
+                <li><a href="#">О Компании</a>
+                </li>
+                <li><a href="#">Контакты</a>
+                </li>
+            </ul>
+            <form action="#">
+                <input type="search" name="search" placeholder="Поиск">
+                <input type="submit" value> </form>
+        </div>
+        <input type="checkbox" name="types" id="type1">
+        <label for="type1">Прилет</label>
+        <input type="checkbox" name="types" id="type2">
+        <label for="type2">Вылет</label>
+        <table id='scoreboard'>
+            <tr class="title">
+                <th>Номер рейса</th>
+                <th>Тип рейса</th>
+                <th>Авиакомпания</th>
+                <th>Тип воздушного судна</th>
+                <th>Аэропорт назначения</th>
+                <th>Время по расписанию</th>
+                <th>Статус рейса</th>
+                <th>Примечание</th>
+            </tr>
+            <tr>
+                <th>Номер рейса</th>
+                <th>Тип рейса</th>
+                <th>Авиакомпания</th>
+                <th>Тип воздушного судна</th>
+                <th>Аэропорт назначения</th>
+                <th>Время по расписанию</th>
+                <th>Статус рейса</th>
+                <th>Примечание</th>
+            </tr>
+            <tr>
+                <td>BG 472</td>
+                <td class="arrival"></td>
+                <td class="el-al"></td>
+                <td class="b737-600"></td>
+                <td>Москва</td>
+                <td>22:10</td>
+                <td>По расписанию</td>
+                <td>&mdash;</td>
+            </tr>
+            <tr>
+                <td>СУ 5825</td>
+                <td class="departure"></td>
+                <td class="aeroflot"></td>
+                <td class="b737-300"></td>
+                <td>Минеральные Воды</td>
+                <td>22:05</td>
+                <td>Ожидание посадки</td>
+                <td>&mdash;</td>
+            </tr>
+            <tr>
+                <td>AF 525</td>
+                <td class="departure"></td>
+                <td class="transaero"></td>
+                <td class="b737-400"></td>
+                <td>Лондон</td>
+                <td>00:05</td>
+                <td>Вылетел</td>
+                <td>Код-шеринг с "Аэрофлот"</td>
+            </tr>
+            <tr>
+                <td>UN 215</td>
+                <td class="departure"></td>
+                <td class="tk"></td>
+                <td class="b737-500"></td>
+                <td>Аланья</td>
+                <td>21:40</td>
+                <td>Посадка закончена</td>
+                <td>&mdash;</td>
+            </tr>
+
+            <tr>
+                <td>S 515</td>
+                <td class="departure"></td>
+                <td class="s7"></td>
+                <td class="b737-700"></td>
+                <td>Тбилиси</td>
+                <td>22:05</td>
+                <td>Регистрация</td>
+                <td>&mdash;</td>
+            </tr>
+            <tr>
+                <td>СУ 5700</td>
+                <td class="departure"></td>
+                <td class="aeroflot"></td>
+                <td class="b737-800"></td>
+                <td>Сочи</td>
+                <td>22:05</td>
+                <td>Ожидание посадки</td>
+                <td>&mdash;</td>
+            </tr>
+            <tr>
+                <td>UN 235</td>
+                <td class="arrival"></td>
+                <td class="tk"></td>
+                <td class="b737-400"></td>
+                <td>Москва</td>
+                <td>22:05</td>
+                <td>Приземлился</td>
+                <td>&mdash;</td>
+            </tr>
+            <tr>
+                <td>AF 875</td>
+                <td class="arrival"></td>
+                <td class="transaero"></td>
+                <td class="b737-300"></td>
+                <td>Москва</td>
+                <td>22:05</td>
+                <td>Летит</td>
+                <td>&mdash;</td>
+            </tr>
+
+            <tr>
+                <td>BG 427</td>
+                <td class="departure"></td>
+                <td class="el-al"></td>
+                <td class="b737-500"></td>
+                <td>Тель-Авив</td>
+                <td>22:05</td>
+                <td>Отменён</td>
+                <td>&mdash;</td>
+            </tr>
+            <tr>
+                <td>S 525</td>
+                <td class="departure"></td>
+                <td class="s7"></td>
+                <td class="b737-600"></td>
+                <td>Париж</td>
+                <td>22:05</td>
+                <td>Ожидание посадки</td>
+                <td>&mdash;</td>
+            </tr>
+            <tr>
+                <td>AF 565</td>
+                <td class="arrival"></td>
+                <td class="transaero"></td>
+                <td class="b737-800"></td>
+                <td>Москва</td>
+                <td>22:05</td>
+                <td>Ожидание посадки</td>
+                <td>&mdash;</td>
+            </tr>
+            <tr>
+                <td>СУ 5800</td>
+                <td class="arrival"></td>
+                <td class="aeroflot"></td>
+                <td class="b737-700"></td>
+                <td>Москва</td>
+                <td>22:05</td>
+                <td>Задерживается до 00:25</td>
+                <td>&mdash;</td>
+            </tr>
+
+            <tr>
+                <td>UN 200</td>
+                <td class="arrival"></td>
+                <td class="tk"></td>
+                <td class="b737-300"></td>
+                <td>Москва</td>
+                <td>22:05</td>
+                <td>Посадка закончена</td>
+                <td>&mdash;</td>
+            </tr>
+
+        </table>
+        <table id="hint"></table>
+        <footer>
+            <p>&copy; Аэропорт</p>
+            <p>ООО ”Аэропорт”</p>
+        </footer>
+
+
+    </div>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        //Реализация пункта
+        //количество отображаемых данных по высоте больше ширины экрана, при прокрутке заголовок таблицы приклеивается к верхней части видимой области окна браузера;
+        $(document).ready(function () {
+            var x = $('#scoreboard tr:last-child').offset().top - 75;
+            var $title = $(".title");
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > $("#scoreboard").offset().top) {
+                    $title.css('visibility', 'visible');
+                } else {
+                    $title.css('visibility', 'hidden');
+                }
+                if ($(this).scrollTop() > x) {
+                    $title.css({
+                        'top': x,
+                        'position': 'absolute'
+                    });
+                } else {
+                    $title.css({
+                        'top': '0',
+                        'position': 'fixed'
+                    });
+                }
+            });
+
+            //Реализация пункта
+            //в дополнение к предыдущему пункту сделайте так, чтобы по клику на соответствующую строчку в выплывающем окне показывались все данные рейса;
+            $("tr").click(function () {
+                $("#hint").html($(this).html());
+            });
+
+            //Реализация пункта
+            //два чекбокса над самим табло: прилёт и вылет, по нажатию показываются только соответствующие рейсы.
+            $(function () {
+                var departure = $('.departure').parent('tr');
+                var arrival = $('.arrival').parent('tr');
+                $("#type1").change(function () {
+                    if ($("#type1").prop("checked", true)) {
+                        $("#type2").prop("checked", false);
+                        departure.detach();
+                        arrival.appendTo('#scoreboard');
+                    }
+                    x = $('#scoreboard tr:last-child').offset().top - 75;
+                });
+
+                $("#type2").change(function () {
+                    if ($("#type2").prop("checked", true)) {
+                        $("#type1").prop("checked", false);
+                        arrival.detach();
+                        departure.appendTo('#scoreboard');
+                    }
+                    x = $('#scoreboard tr:last-child').offset().top - 75;
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
