@@ -113,7 +113,7 @@ var callback = function() {
             }
 
             if (cc.length) {
-                for (var k = 0; k < responses['/populations'].length; k++) { //Если массив c[] не пустой, перебираем /populations и ищем соответствия городов, после чего суммируем численности их населения
+                for (var k = 0; k < responses['/populations'].length; k++) { //Если массив cc[] не пустой, перебираем /populations и ищем соответствия городов, после чего суммируем численности их населения
                     for (var j = 0; j < cc.length; j++) {
                         if (responses['/populations'][k].name === cc[j]) {
                             p += responses['/populations'][k].count;
@@ -121,7 +121,7 @@ var callback = function() {
                     }
                 }
             } else {
-                for (var k = 0; k < responses['/populations'].length; k++) { //Если массив c[] пустой, проверяем является ли значение, введеное пользователем, названием города
+                for (var k = 0; k < responses['/populations'].length; k++) { //Если массив cc[] пустой, проверяем является ли значение, введеное пользователем, названием города
                     if (responses['/populations'][k].name === inputValue) { //Если пользователь ввел название города, сохраняем значение численности населения города в переменную p
                         p = responses['/populations'][k].count;
                         break; //Когда найдем соответствие, сохраняем значения численности населения и выходим из цикла
