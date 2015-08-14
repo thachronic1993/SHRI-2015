@@ -99,7 +99,7 @@ var callback = function() {
             if (c.length) {
                 for (var k = 0; k < responses['/cities'].length; k++) { //Если массив c[] не пустой, перебираем /cities и ищем соответствия городов со странами
                     for (var j = 0; j < c.length; j++) {
-                        if (responses['/cities'][k].country === c[j]) { //Если соответствие найдено, добавляем названия городов в массив c[]
+                        if (responses['/cities'][k].country === c[j]) { //Если соответствие найдено, добавляем названия городов в массив cc[]
                             cc.push(responses['/cities'][k].name);
                         }
                     }
